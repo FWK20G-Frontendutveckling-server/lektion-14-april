@@ -62,7 +62,7 @@ app.post('/api/todo', (request, response) => {
 
   let result = {};
 
-  if(todos) {
+  if(todos.length > 0) {
     result.success = true;
     result.todos = todos;
   } else {
@@ -78,12 +78,28 @@ app.get('/api/todo', (request, response) => {
 
   let result = {};
 
-  if(todos) {
+  if(todos.length > 0) {
     result.success = true;
     result.todos = todos;
   } else {
     result.success = false;
     result.message = 'Kunde inte hämta todos';
+  }
+
+  response.json(result);
+});
+
+app.delete('/api/todo/:id', (request, response) => {
+  const todoId = request.params.id;
+  const todos = database.get('todos').remove({ id: todoId }).write();
+  
+  let result = {};
+
+  if(todos.length > 0) {
+    result.success = true;
+  } else {
+    result.success = false;
+    result.message = 'Kunde inte ta bort todo';
   }
 
   response.json(result);

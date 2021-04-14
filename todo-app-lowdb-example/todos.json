@@ -1,20 +1,16 @@
 {
   "todos": [
     {
-      "task": "Drick kaffe",
-      "id": "CGthcJIlKJ6l0RtzkxTyf"
-    },
-    {
-      "task": "Drick kaffe",
-      "id": "6zPg5Ua0ErZZ05gKMPM0I"
-    },
-    {
       "task": "Köp kaffe",
       "id": "9bAgDWu5-OYR4CSKl4xnB"
     },
     {
-      "hej": "Test",
-      "id": "RPjPkbPYWHTAabAye2-st"
+      "task": "Brygg kaffe",
+      "id": "TBRDTOVRw393n5PZivOt3"
+    },
+    {
+      "task": "Drick kaffe",
+      "id": "YB4O4FXkxaDHJcP2YPHw2"
     }
   ]
 }
