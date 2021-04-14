@@ -15,3 +15,5 @@ Lowdb dokumentation: https://github.com/typicode/lowdb
 
 ## Inspelningar
 
+https://drive.google.com/drive/folders/1s7TCiuiWnskghloo3yz1jG83cDIjDg7a?usp=sharing
+
