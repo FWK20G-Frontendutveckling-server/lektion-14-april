@@ -57,3 +57,6 @@ database.set('count', numberOfAccounts.length).write();
 const filterAccounts = database.get('accounts').filter({ username: 'Ada' }).value();
 console.log(`filterAccounts: ${JSON.stringify(filterAccounts)}`);
 
+//Hämta arrayen accounts, ta bort det objekt där användarnamn är lika med Test
+//Till sist skriv till databasenH
+database.get('accounts').remove({ usernamße: 'Test' }).write();
